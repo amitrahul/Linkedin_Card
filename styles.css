@@ -1,0 +1,152 @@
+*{
+    --color1:#171B26;
+    --color2:#1C3659;
+    --color3:#0798F2;
+    --color4:#F2C879;
+    --color5:#D9C49C;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-color: var(--color1);
+color: white;
+}
+
+.cardWrapper{
+    width: 600px;
+    height: 362px;
+    margin: 190px auto;
+    border: 4px solid var(--color2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 10px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    
+}
+
+.leftheader{
+    display: flex;
+    gap: 10px;
+}
+
+.rightheder{
+    margin-left: 20PX;
+}
+
+.likedPerson{
+    font-size: large;
+    font-weight: 900;
+}
+
+.liked{
+    font-weight: 400;
+    font-size: medium;
+    color: var(--color5);
+}
+
+.divider{
+    height: 2px;
+    background: radial-gradient(
+      circle,
+      rgba(238, 209, 174, 1) 11%,
+      rgba(26, 93, 102, 1) 82%
+    );
+   
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 15px;
+}
+
+.body-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profilePic{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.body-header-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-connection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.connect{
+    font-weight: 400;
+    font-size: medium;
+    color: var(--color5);
+}
+
+.company{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 31em;
+    color: var(--color4);
+}
+
+.bodyText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.bodyText h3{
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.bodyFooter{
+    display: flex;
+    justify-content: space-between;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-footer div{
+    color: var(--color2);
+    font-weight: bolder;
+}
+
+.responsivePerson{
+    color: var(--color3);
+}
+.onlineTime{
+    color: var(--color3);
+}
+.footerRight{
+    color: var(--color5);
+}
